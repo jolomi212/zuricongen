@@ -20,7 +20,7 @@ nav{
     display: flex;
     height: 8.375rem;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 100px);
     /* background-color: aqua; */
     padding-left: 50px;
     padding-right: 50px;
