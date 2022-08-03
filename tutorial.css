@@ -5,7 +5,7 @@
     --gray:  #A6A8A8;
     font-family: Lato;
     --green: #285052;
-    --yellow: #F5A547;
+    --yellow: #F7B05E;
     --lightgray: #F8F8F8;
     --blue: #251181;
     --black:  #151515;
@@ -16,84 +16,115 @@
 html{
     color: var(--blue);
 }
-nav{
-    display: flex;
-    height: 8.375rem;
-    align-items: center;
-    width: calc(100% - 100px);
-    /* background-color: aqua; */
-    padding-left: 50px;
-    padding-right: 50px;
-    justify-content: space-between;
+
+
+
+
+a {
+  text-decoration: none !important;
 }
-em{
-    font-style: normal;
-    color: var(--yellow);
+ul, ol {
+  list-style: none !important;
 }
-h3{
-    font-size: 40px;
+.zuricongen_blue_color {
+  color: #251181
+}
+.zuricongen_yellow_color {
+  color: #f7b05e
+}
+
+/* **************************** */
+nav {
+  position: relative;
+  display: flex;
+  padding: 1.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 100;
+ 
+}
+
+nav h2 {
+  font-size: 40px;
+  color: #251181;
+  margin-left: 1rem;
+}
+
+nav h2 span {
+  color: #f7b05e;
+}
+
+nav .links a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #251181;
+  margin: 0 1rem;
+}
+
+nav .authentication__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .authentication__links .login__btn {
+  margin: 0 0.5rem;
+  color: #251181;
+  background-color: #ffffff;
+  border: 1px solid #251181;
+  border-radius: 8px;
+  padding: 10px 55px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav .authentication__links .signin__btn {
+  margin: 0 0.5rem;
+  color: #ffffff;
+  background-color: #251181;
+  border-radius: 8px;
+  padding: 10px 55px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hide{
+  display: none;
+}
+.open{
+  display: none;
+}
+.logo{
+  width: 3rem;
 }
 .title{
-    margin-right: 3.56rem;
+  display: flex;
 }
-.nav-item{
-    margin-right: 4.75rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 29px;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--blue);
-}
-.btn-nav{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
-    gap: 4px;
-    border-radius: 0.5rem;
-    width:  150px;
-    height: 45px;
-    margin-left: 2rem;
-    font-size: 20px;
-    line-height: 30px;
-}
-.green{
-    background-color: var(--blue);
-    color: white;
-    
-}
-.green a{
-    
-}
-.white{
-    background-color: white;
-    border: 1px solid var(--blue);
-}
-.right{
-   display: flex;
-   margin-left: auto;
-}
+
+
+
+
 
 main{
     
     padding-top: 4.5rem;
 }
 main h3{
-    padding-left: 43px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
 }
 .aqua{
     background: #F5F5F5;;
   
     width: 100%;
     height:  32.75rem;
-    margin-top: 2.5rem;
-    padding-top: 8.375rem;
-    padding-left: 23.25rem;
-    padding-right: 23.25rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 h4{
@@ -109,6 +140,11 @@ h4{
 }
 .aqua p{
     width: 48rem;
+}
+.guide-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .guide{
     font-family: 'Lato';
@@ -131,78 +167,83 @@ color: #151515;
     line-height: 24px;
     color: var(--black);
     margin-top: 1.5rem;
-    /* width: 72rem; */
+    width: 70.25rem; 
+}
+.tutorial > *{
+  width: 70.25rem;
 }
 .tutorial h4{
     text-align: left;
     margin-top: 1.5rem;
+    width: 70.25rem;
 }
 
 .tutorial{
-    
-    padding-left: 1.5625rem;
-    margin-bottom: 5.375rem;
+   display: flex;
+  margin-bottom: 5.375rem;
+  flex-direction: column; 
+  align-items: center;
+}
+/* .what{
+  width: 70.25rem; 
    
 }
-.what{
-    padding-left: 1.5625rem;
-    padding-right: 20rem;
-}
 .formats{
-    padding-left: 1.875rem;
-    padding-right: 20rem;
-}
+  width: 70.25rem; 
+} */
 .how{
-    padding-left: 1.5625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0.5rem;
     margin-top: 1rem;
     background-color:var(--lightgray) ;
-    padding-right: 20rem;
+   
     padding-bottom: 4.375rem;
 }
-.download{
-    padding-right: 20rem;
-    padding-left: 1.6875rem;
+/* .download{
+  width: 70.25rem; 
+ 
+} */
+
+.img-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
-.example1{
-    margin-left: 5.6875rem;
-    margin-top: 1.75rem;
-}
-.example2{
-    margin-left: 5.75rem;
-    margin-top: 1.5rem;
-}
+
 .amazon{
     margin-left: 1.5rem;
-    margin-top: 1.5rem;
-}
+   
+} 
 .link{
     box-sizing: border-box;
-
+    display: flex;
+    justify-content: center;
     /* Auto layout */
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    width: 45rem;
-    margin-left: 3rem;
-    margin-top: 1.5rem;
-    border: 1px solid #B1AAAA;
-    border-radius: 10px;
-
-   
-   background-color: white;
-    margin-left: auto;
-    color: var(--blue);
+    
    
 
 }
 .link p{
-    margin-top: 0%;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  width: 45rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  border: 1px solid #B1AAAA;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--blue);
 }
+
+
 
 /*Footer*/
 footer {
@@ -249,7 +290,7 @@ footer {
   footer .footer__content .second__section {
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    width: 100%;
     padding-top: 1rem;
   }
   
@@ -286,13 +327,279 @@ footer {
   }
   
   footer .copyrights .bottom__links {
-    width: 50%;
+    width: 80%;
     margin: auto;
     align-items: center;
+    margin-top: 0.5rem;
   }
   
   footer .copyrights .bottom__links a {
     margin: 0 1.5rem;
     color: #251181;
+    
   }
   
+
+
+  @media screen  and (max-width: 54rem) {
+    .aqua{
+      margin-top: 2.5rem;
+    }
+    .aqua p{
+      width: 40.125rem;
+    }
+    .guide{
+      width: 35.6rem;
+      color: var(--yellow);
+    }
+    .tutorial > *{
+      width: 43rem;
+    }
+    .tutorial h4{
+      width: 43rem;
+    }
+    .tutorial p{
+      width: 43rem;
+    }
+    .how{
+      width: 100%;
+    }
+    .img-container{}
+    .example1{
+      width: 90%;
+    }
+    .example2{
+      width: 57%;
+    }
+    .amazon{
+      width: 30%;
+    }
+    main{
+      padding-top: 0rem;
+    }
+
+
+/*NAVBAR   */
+nav .desktop {
+  display: none;
+}
+nav .links a{
+  margin: 1rem 0;
+  font-size: 20px;
+  width: 150px;
+  text-align: left;
+  
+  /* background: #f7b05e */
+}
+.authentication__links {
+ margin-left: auto;
+}
+nav .authentication__links .login__btn,
+nav .authentication__links .signin__btn {
+  min-width: 100px !important;
+  width: 6.125rem;
+  height: 2.125rem;
+  font-size: 19px;
+  display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding: 0%;
+margin-right: 1.75rem;
+}
+nav h2{
+  /* margin-left: 4rem; */
+  font-size: 1.5rem;
+}
+.title{
+  margin: 0;
+}
+nav{
+  /* justify-content: space-between; */
+}
+
+
+.open{
+  /* margin: auto; */
+  margin-right: 3rem;
+  display: block;
+  width: 1.5rem;
+}
+
+
+
+
+
+.responsive-nav{
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100vw ;
+  height: 28rem;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.responsive-nav div{
+  display: flex;
+}
+.close{
+  margin-left: auto;
+  width: 3rem;
+}
+.links{
+  flex-direction: column;
+  margin-top: 2rem;
+  height: 30.1875rem;
+ 
+}
+
+.x{
+  z-index: 10000;
+}
+
+
+/*FOOTER*/
+footer {
+  padding: 30px !important;
+}
+footer .footer__content .first__section h2 {
+  font-size: 24px;
+}
+
+footer .footer__content .first__section h3,
+footer .footer__content .second__section h3 {
+  font-size: 18px;
+}
+footer .footer__content .first__section p,
+footer li,
+footer .copyrights {
+  font-size: 16px !important;
+}
+
+footer  .second__section {
+  flex-direction: row;
+  margin-top: 20px;
+}
+.footer__content{
+  flex-direction: column;
+}
+
+footer .footer__content .first__section {
+  width: 100%;
+}
+.bottom__links{
+ 
+}
+
+  }
+
+
+@media screen and (max-width: 28rem) {
+  nav h2 {
+    font-size: 18px;
+}
+.close{
+  width: 29px;
+}
+nav .authentication__links .signin__btn, nav .authentication__links .login__btn{
+  display: none;
+}
+.open{
+  margin-right: 2rem;
+}
+
+.aqua{
+  border-radius: 30px 0px;
+  width: 100%;
+  height: 16.375rem;
+  margin-top: 1.5rem;
+
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.aqua p{
+  width: 22rem;
+
+}
+.aqua h4{
+  font-size: 20px;
+  line-height: 24px;
+}
+.guide{
+  width: 20rem;
+  color: var(--yellow);
+}
+.tutorial > *{
+  width: 22rem;
+}
+.tutorial h4{
+  width: 22rem;
+}
+.tutorial p{
+  width: 22rem;
+}
+.how{
+  width: 100%;
+}
+.img-container{}
+.example1{
+  width: 90%;
+}
+.example2{
+  width: 57%;
+}
+.amazon{
+  width: 30%;
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+  padding: 30px !important;
+}
+footer .footer__content .first__section h2 {
+  font-size: 24px;
+}
+
+footer .footer__content .first__section h3,
+footer .footer__content .second__section h3 {
+  font-size: 18px;
+}
+footer .footer__content .first__section p,
+footer li,
+footer .copyrights {
+  font-size: 16px !important;
+}
+
+footer .footer__content .second__section {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer .footer__content .first__section .second__section {
+  width: 100%;
+}
+.second__section{
+  width: 100%;
+}
+
+footer ul, li, h3{
+  width: 100%;
+}
+
+}
+
+.hide{
+  display: none;
+}

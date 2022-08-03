@@ -11,26 +11,45 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css"
+    
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <span class="title"><h3>ZURICON<em>GEN</em></h3></span>
-            <li class="nav-item"><a href="">Converter</a></li>
-            <li class="nav-item"><a href="">Generator</a></li>
-            <li class="nav-item"><a href="">Texticon</a></li>
-            <li class="nav-item"><a href="">Tutorial</a></li>
+       
+        <nav>
+         
 
-            <span class="right">
-                <a href="" ><div class="btn-nav white">Log In</div></a>
-                <a href="" ><div class="btn-nav green">Sign Up</div></a>
-                
-                
-            </span>
+          <span class="title"><img src="assets/logo.png" alt="" class="logo"><h2 class="title"> Zuricon<span>Gen</span></h2> </span>  
+          <div class="links desktop">
+              <a href="/">Converter</a>
+              <a href="/">Generator</a>
+              <a href="/">Texticons</a>
+              <a href="/">Tutorials</a>
+          </div>
+   
+          <div class="authentication__links">
+              <div class="login__btn">Login</div>
+              <div class="signin__btn">Sign in</div>
+             
+              
+          </div>
+         <div class="open"> <i class="fa-solid fa-bars fa-xl " ></i></div>
+          <div class="responsive-nav hide">
+            <div> <span class="title"><img src="assets/logo.png" alt="" class="logo"><h2 class="title"> Zuricon<span>Gen</span></h2> </span>    <img src="assets/close.png" alt="" class="close"> </div>
 
+            <div class="links">
+            <a href="/">Converter</a>
+              <a href="/">Generator</a>
+              <a href="/">Texticons</a>
+              <a href="/">Tutorials</a>
+              <a href="/">Login</a>
+              <a href="/">Sign Up</a>
+          </div>
+        </div>
 
-        </nav>
+      </nav>
     </header>
     <main>
         <h3>Tutorial</h3>
@@ -38,20 +57,21 @@
             <p><h4>If branding your business is very important to you, favicons should really be an integral part of your marketing armory. They’re not the most crucial aspect of a website, but it’s details like this that make sure you’re remembered by potential customers and stand out from the competition.</h4> </p>
 
         </div>
+        <div class="guide-container">
         <p class="guide">This guide will show you how to make a favicon, and how they can boost your marketing efforts.</p>
-    
+    </div>
         <div class="tutorial">
             <div class="what">
                 <h4>What is a Favicon?</h4>
                 <p>Favicons are the small square images that are usually displayed before the URL in the address bar of a browser, in the browsing tabs, and next to the site name in a users list of bookmarks.It’s important to have a favicon for your website for brand recognition so that your users can easily identify your site in their browser tabs and bookmarks.</p>
-                <img src="assets/favicon example.png" alt="" class="example1">
+               <div class="img-container"> <img src="assets/favicon example.png" alt="" class="example1"></div>
                 <p>
                     You might also find this decorative icons, called a favorite icon or favicon for short, in your browser's favorites list or displayed on tabs. While not a requirement for any web site, favicons do add an extra touch of personalization that allow you to help brand your site and differentiate it from others. Favicon images are small in size, only 16 pixels in height by 16 pixels in width, so there is not much space for complex designs. Still, a good favicon that is clean, simple and easily identifiable can provide a good visual indicator for visitors navigating to your site through their tabs or bookmarks.
                     <br>
                     <br>
                     Favicon, short for “favourite icon”, was originally a new feature within Internet Explorer browser in 1999. When users bookmarked a site through Internet Explorer, they displayed the icon next to the website’s name in the favourites list.
                 </p>
-                <img src="assets/favicon example 2.png" alt="" class="example2"> <img src="assets/amazon favicon.png" alt="" class="amazon"> 
+                <div class="img-container"><img src="assets/favicon example 2.png" alt="" class="example2"> <img src="assets/amazon favicon.png" alt="" class="amazon"> </div>
                 <p>Favicon can also be referred to as; browser icon, favorite icon, shortcut icon, tab icon, URL icon, and bookmark icon. The word favicon is short for “favorite icon” and originates from Internet Explorer’s “Favorites” feature which most modern browsers call “bookmarks”.</p>
             </div>
 
@@ -172,6 +192,20 @@
           </div>
         </div>
       </footer>
-    
+    <script>
+     document.getElementsByClassName("open")[0].addEventListener("click", function(){
+     const nav = document.getElementsByClassName("responsive-nav")[0];
+     nav.classList.remove("hide");
+
+
+     })
+
+     document.getElementsByClassName("close")[0].addEventListener( "click", function(){
+     const nav = document.getElementsByClassName("responsive-nav")[0];
+     nav.classList.add("hide");
+
+
+     })
+    </script>
 </body>
 </html>
